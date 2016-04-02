@@ -2,7 +2,7 @@
 
 ### About ###
 
-Basic state machine examples and experiments. Mostly here to help others understand how a state machine works and is built in code for the Arduino.
+Basic state machine examples and experiments. Mostly here to help others understand how a state machine works and is built using the Arduino.
 
 * Unless otherwise specified, all code is licensed as GPLv3 (http://www.gnu.org/licenses/gpl-3.0.en.html)
 * No guarantees that any of the code will compile properly or work at all!

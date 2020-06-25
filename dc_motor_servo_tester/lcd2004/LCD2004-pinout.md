@@ -39,7 +39,6 @@ IDC Male Connector Pin
  9 = D4         (LCD Pin 11)
 10 = VCC        (LCD Pin 2 - VDD, and Buttons)
 ```
----
 
 ### IDC Female Connector (Ribbon) ###
 
@@ -66,3 +65,9 @@ IDC Male Connector Pin
  9 = D4         (LCD Pin 11)
 10 = VCC        (LCD Pin 2 - VDD, and Buttons)
 ```
+
+### Who do I cuss out? ###
+
+If you notice any discrepancies or issues with this project, or if you just want to send me a love letter (or hate mail):
+
+* Andrew L. Ayers - andrewa AT phoenixgarage DOT org [ [www.phoenixgarage.org](https://www.phoenixgarage.org/) ]

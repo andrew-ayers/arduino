@@ -1,10 +1,12 @@
-# LCD2004 and Buttons - Schematic and Pinouts #
+# ANET LCD2004 and Buttons - Module, Schematic, and Pinouts #
 
-![LCD 2004](LCD2004.jpg)
+## Module ##
+
+![ANET LCD 2004](LCD2004.jpg)
 
 ## Schematic ##
 
-![LCD 2004 Schematic](LCD2004-schematic.png)
+![ANET LCD 2004 Schematic](LCD2004-schematic.png)
 
 ## Board (back) Pinouts ##
 

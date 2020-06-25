@@ -1,5 +1,7 @@
 # LCD2004 and Buttons - Schematic and Pinouts #
 
+![LCD 2004](LCD2004.jpg)
+
 ## Schematic ##
 
 ![LCD 2004 Schematic](LCD2004-schematic.png)

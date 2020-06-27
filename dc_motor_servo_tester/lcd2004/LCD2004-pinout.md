@@ -30,13 +30,13 @@ IDC Male Connector Pin
 
  1 = Ground     (LCD Pin 1 and 16 - VSS, and Buttons)
  2 = NC
- 3 = RS         (LCD Pin 4)
- 4 = E          (LCD Pin 6)
- 5 = Buttons
- 6 = D7         (LCD Pin 14)
- 7 = D6         (LCD Pin 13)
- 8 = D5         (LCD Pin 12)
- 9 = D4         (LCD Pin 11)
+ 3 = RS         (LCD Pin 4 - Arduino D6)
+ 4 = E          (LCD Pin 6 - Arduino D7)
+ 5 = Buttons    (Arduino A2)
+ 6 = D7         (LCD Pin 14 - Arduino D12)
+ 7 = D6         (LCD Pin 13 - Arduino D11)
+ 8 = D5         (LCD Pin 12 - Arduino D10)
+ 9 = D4         (LCD Pin 11 - Arduino D9)
 10 = VCC        (LCD Pin 2 - VDD, and Buttons)
 ```
 
@@ -56,13 +56,13 @@ IDC Male Connector Pin
 
  1 = Ground     (LCD Pin 1 and 16 - VSS, and Buttons)
  2 = NC
- 3 = RS         (LCD Pin 4)
- 4 = E          (LCD Pin 6)
- 5 = Buttons
- 6 = D7         (LCD Pin 14)
- 7 = D6         (LCD Pin 13)
- 8 = D5         (LCD Pin 12)
- 9 = D4         (LCD Pin 11)
+ 3 = RS         (LCD Pin 4 - Arduino D6)
+ 4 = E          (LCD Pin 6 - Arduino D7)
+ 5 = Buttons    (Arduino A2)
+ 6 = D7         (LCD Pin 14 - Arduino D12)
+ 7 = D6         (LCD Pin 13 - Arduino D11)
+ 8 = D5         (LCD Pin 12 - Arduino D10)
+ 9 = D4         (LCD Pin 11 - Arduino D9)
 10 = VCC        (LCD Pin 2 - VDD, and Buttons)
 ```
 

@@ -1,4 +1,10 @@
-# DC Motor and Servo Tester #
+# 12-24 VDC Motor and Servo Tester #
+
+### Block Diagram ###
+
+![Block Diagram](general/block-diagram.png)
+
+### Description ###
 
 This project details the design and construction of a piece of testing equipment for:
 
@@ -22,7 +28,9 @@ Additional planned capabilities include:
 * Optional menu-based control via USB serial
 * Optional data logging via USB serial or to an SD card
 * (blue-sky) Bluetooth control and logging via mobile application?
-  
+
+### Why am I building this? ###
+
 The need for this piece of equipment arose when I realized I had quite a few different DC motors and servos that I had little idea as to their actual capabilities. Questions arose such as:
 
 * Can I run a particular motor continuously?
@@ -57,6 +65,12 @@ The project will likely have a variety of folders for:
 * Code - Arduino sketches and libraries (as needed)
 
 These will be put in place as needed...
+
+### Additional References ###
+
+* [LCD Menu Operations](../menu/menu-operations.md)
+* [ANET LCD2004 Pinout Reference](lcd2004/LCD2004-pinout.md)
+* [Arduino Pin Usage Reference](../general/pins.md)
 
 ### Pull Requests ###
 

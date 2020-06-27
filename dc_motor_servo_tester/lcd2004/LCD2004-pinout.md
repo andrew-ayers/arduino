@@ -66,6 +66,10 @@ IDC Male Connector Pin
 10 = VCC        (LCD Pin 2 - VDD, and Buttons)
 ```
 
+### Additional References ###
+
+[Arduino Pin Usage Reference](../general/pins.md)
+
 ### Who do I cuss out? ###
 
 If you notice any discrepancies or issues with this project, or if you just want to send me a love letter (or hate mail):

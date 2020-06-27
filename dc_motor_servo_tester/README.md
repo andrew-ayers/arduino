@@ -68,9 +68,9 @@ These will be put in place as needed...
 
 ### Additional References ###
 
-* [LCD Menu Operations](../menu/menu-operations.md)
+* [LCD Menu Operations](menu/menu-operations.md)
 * [ANET LCD2004 Pinout Reference](lcd2004/LCD2004-pinout.md)
-* [Arduino Pin Usage Reference](../general/pins.md)
+* [Arduino Pin Usage Reference](general/pins.md)
 
 ### Pull Requests ###
 

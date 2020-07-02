@@ -66,6 +66,20 @@ IDC Male Connector Pin
 10 = VCC        (LCD Pin 2 - VDD, and Buttons - Arduino 5V)
 ```
 
+### ANET LCD 2004 Arduino Interface Schematic ###
+
+![ANET LCD 2004 Arduino Interface Schematic](LCD2004-arduino-interface-schematic.png)
+
+```
+Color Legend:
+
+VDD / 5V  = Red
+VSS / Gnd = Black
+Buttons   = Green
+RS / E    = Yellow (control)
+D4 - D7   = Blue (data)
+```
+
 ### Additional References ###
 
 [Arduino Pin Usage Reference](../general/pins.md)

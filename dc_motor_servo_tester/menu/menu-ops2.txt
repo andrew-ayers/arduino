@@ -1,0 +1,63 @@
+---------------------
+Mode 6 - Power Supply
+---------------------
+
+Power Supply: {Cancel,On,Off}
+V: 12.1
+A: 0.1
+
+----------------------
+Mode 7 - Motor Testing
+----------------------
+
+Selection:
+
+Motor Test: {Cancel,1s,5s,15s,30s,60s,300s,600s}
+V: 12.1   R: 1001
+A: 0.1    T: 37c
+
+Testing:
+
+Motor Test: 27s
+V: 12.1   R: 1021
+A: 0.1    T: 37c
+
+Completed:
+
+    C  RPM  VOLT AMP 
+ST 38  0    12   9.8
+AV 42  1000 12.0 0.8
+MN 36  980  11.8 0.7
+MX 50  1005 12.4 1.2
+
+----------------------
+Mode 8 - Servo Testing
+----------------------
+
+Servo Test: {Cancel,Manual,OscNoE,OscEas}
+V: 12.1
+A: 0.1
+
+--------------------
+Mode 9 - ESC Testing
+--------------------
+
+Selection:
+
+ESC Test: {Cancel,Manual,OscNoE,OscEas}
+V: 12.1  RPM: 1001
+A: 0.1   TMP: 37C
+
+Testing:
+
+ESC Test: OscNoE
+V: 12.1  RPM: 1001
+A: 0.1   TMP: 37C
+
+Completed:
+
+    C  RPM  VOLT AMP 
+ST 38  0    12   9.8
+AV 42  1000 12.0 0.8
+MN 36  980  11.8 0.7
+MX 50  1005 12.4 1.2

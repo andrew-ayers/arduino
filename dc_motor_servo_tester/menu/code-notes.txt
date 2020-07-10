@@ -1,0 +1,57 @@
+char* menuSelections[]={
+    "Power Supply", 
+    "Motor Testing", 
+    "Servo Testing", 
+    "ESC Testing", 
+    "Configuration"
+};
+
+char* initialize[]={
+    "Motor/Servo Tester",
+    "Version 1.0",
+    "Copyright (c) 2020",
+    "Andrew L. Ayers"
+};
+
+char* powerSupplyModes[]={
+    "On",
+    "Off"
+};
+
+char* powerSupply[]={
+    "Status:",
+    "Volts:",
+    "Current:"
+};
+
+char* motorTesting[]={
+    "Mode:",
+    "Length:",
+    "Volts:",
+    "Current:"
+};
+
+int testLengths[]={
+    1,5,15,30,60,300,600
+};
+
+char* motorTestingModes[]={
+    "Config",
+    "Start",
+    "Cancel"
+};
+
+void showInitScreen() {
+    lcd.clear();
+
+    for (char i = 0; i < 4; i++) {
+        centerTextLCD(i, initialize[i]);
+    }
+    
+    delay(2000);
+}
+
+void centerTextLCD(char row, char* message) {
+    char col = 10 - strlen(message) / 2;
+    lcd.print(row, col, message);
+}

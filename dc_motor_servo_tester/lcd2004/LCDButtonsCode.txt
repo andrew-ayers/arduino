@@ -1,0 +1,116 @@
+--- LCDButtons.h ---
+
+/*
+    LCDButtons.h - Library for ANET 20x4 LCD button handling
+    Copyright (c) 2020 by Andrew L. Ayers
+    Licensed under the GNU Public License (GPL) Version 3
+    http://www.gnu.org/licenses/gpl-3.0.en.html
+*/
+
+#ifndef LCDButtons_h
+#define LCDButtons_h
+
+#include "Arduino.h"
+
+#define ACTION_NONE  0
+#define ACTION_UP    1
+#define ACTION_DOWN  2
+#define ACTION_BACK  4
+#define ACTION_ENTER 8
+#define ACTION_MENU  16
+
+class LCDButtons {
+    private:
+        int _pin;
+        int _action;
+
+        long _lastMillis = 0; // Last time the buttons were sampled
+
+        int _buttonSamples = 0; // How many times we have seen new value?
+        int _debounceSamples = 40; // Number of samples to take for debouncing
+        int _debouncedVal = 0;  // The debounced button value
+
+    public:
+        LCDButtons(int pin);
+        int read();
+        int getAction();
+}
+
+#endif
+
+--- keywords.txt ---
+
+LCDButtons KEYWORD1
+read       KEYWORD2
+getAction  KEYWORD2
+
+--- LCDButtons.cpp ---
+
+/*
+    LCDButtons.cpp - Library for ANET 20x4 LCD button handling
+    Copyright (c) 2020 by Andrew L. Ayers
+    Licensed under the GNU Public License (GPL) Version 3
+    http://www.gnu.org/licenses/gpl-3.0.en.html
+*/
+
+#include "Arduino.h"
+#include "LCDButtons.h"
+
+LCDButtons::LCDButtons(int pin) {
+    _pin = pin;
+}
+
+int LCDButtons::read() {
+
+    _action = ACTION_NONE;
+
+    if (millis() != _lastMillis) {
+    
+        int buttonVal = analogRead(_pin);
+
+        if (buttonVal == _debouncedVal && _buttonSamples > 0) {
+            _buttonSamples--;    
+        }
+        
+        if (buttonVal != _debouncedVal) {
+            _buttonSamples++;
+        }
+        
+        // If buttonVal stays the same value for the debounce period, switch to it
+        if (_buttonSamples > _debounceSamples) {
+            _debouncedVal = buttonVal;
+            
+            // If a button has been pressed, set the action
+            if (_debouncedVal < 1000) {
+
+                if (_debouncedVal > 680 && _debouncedVal < 710) {
+                    _action = ACTION_UP;
+                }
+
+                if (_debouncedVal > 160 && _debouncedVal < 190) {
+                    _action = ACTION_DOWN;
+                }
+
+                if (_debouncedVal > 70 && _debouncedVal < 100) {
+                    _action = ACTION_BACK;
+                }
+
+                if (_debouncedVal > 490 && _debouncedVal < 520) {
+                    _action = ACTION_ENTER;
+                }
+
+                if (_debouncedVal > 300 && _debouncedVal < 330) {
+                    _action = ACTION_MENU;
+                }                
+            }
+
+            _buttonSamples = 0;
+        }
+    
+        _lastMillis = millis();
+    }      
+}
+
+int LCDButtons::getAction() {
+    return _action;
+}

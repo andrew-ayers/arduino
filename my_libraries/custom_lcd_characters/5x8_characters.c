@@ -79,6 +79,7 @@ byte ghost[] = {
     B10101,
 };
 
+// Alien?
 byte alien[] = {
     B00000,
     B11111,
